@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Snake</title>
+</head>
+<style>
+      body {
+        background-image: url("lam-game-ran-san-moi-bang-javavscript-63725373434.9996.png");
+        background-size: cover;
+        text-align: center;
+      }
+      h1 {
+        font-size: 30px;;
+        text-align: center;;
+        background-color: white;
+        color: red;
+      }
+      button {
+        background-color: #4CAF50; /* Green */
+        border: none;
+        color: white;
+        padding: 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 20px;
+        position: relative;
+        left: 80px;
+      }
+      button:hover{
+        background-color: green;
+      }
+</style>
+
+    <h1>CHOOSE THE MODE YOU WANT TO PLAY</h1>
+
+<body>
+    <button onclick="square()">SQUARE MODE</button><br>
+    <button onclick="noSquare()">NO SQUARE MODE</button>
+    <script>
+        function square() {
+          location.replace("snake-square.html");
+        }
+        function noSquare() {
+          location.replace("snake-no-square.html");
+        }
+    </script>
+</body>
+</html>
